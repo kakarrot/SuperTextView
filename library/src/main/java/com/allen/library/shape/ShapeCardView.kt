@@ -1,8 +1,8 @@
 package com.allen.library.shape
 
 import android.content.Context
-import android.support.v7.widget.CardView
 import android.util.AttributeSet
+import androidx.cardview.widget.CardView
 import com.allen.library.data.AttributeSetData
 import com.allen.library.helper.AttributeSetHelper
 import com.allen.library.helper.ShapeBuilder

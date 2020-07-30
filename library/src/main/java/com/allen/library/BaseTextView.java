@@ -1,12 +1,13 @@
 package com.allen.library;
 
 import android.content.Context;
-import android.support.v7.widget.AppCompatTextView;
 import android.text.InputFilter;
 import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import androidx.appcompat.widget.AppCompatTextView;
 
 /**
  * Created by Allen on 2017/6/29.

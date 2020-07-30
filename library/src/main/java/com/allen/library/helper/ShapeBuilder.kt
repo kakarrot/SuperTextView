@@ -4,8 +4,8 @@ import android.content.Context
 import android.graphics.drawable.GradientDrawable
 import android.graphics.drawable.StateListDrawable
 import android.os.Build
-import android.support.v4.view.ViewCompat
 import android.view.View
+import androidx.core.view.ViewCompat
 import com.allen.library.data.AttributeSetData
 
 /**

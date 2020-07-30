@@ -1,7 +1,8 @@
 package com.allen.supertextview;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.allen.library.SuperButton;
 
@@ -14,7 +15,6 @@ public class SuperButtonActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.super_button_layout);
-
 
         SuperButton superButton = new SuperButton(this);
 

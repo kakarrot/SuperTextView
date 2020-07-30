@@ -1,17 +1,23 @@
 package com.allen.supertextview;
 
+import android.graphics.Bitmap;
 import android.graphics.Color;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.Gravity;
+import android.widget.ImageView;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.allen.library.SuperTextView;
 import com.allen.library.helper.ShapeBuilder;
 import com.allen.supertextview.utils.DisplayUtils;
 import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.resource.drawable.GlideDrawable;
-import com.bumptech.glide.request.animation.GlideAnimation;
+import com.bumptech.glide.request.target.ImageViewTarget;
 import com.bumptech.glide.request.target.SimpleTarget;
+import com.bumptech.glide.request.transition.Transition;
 import com.squareup.picasso.Picasso;
 
 /**
@@ -119,18 +125,18 @@ public class TypeActivity extends AppCompatActivity {
         Glide.with(this)
                 .load(url3)
                 .placeholder(R.drawable.head_default)
-                .into(new SimpleTarget<GlideDrawable>() {
+                .into(new SimpleTarget<Drawable>() {
                     @Override
-                    public void onResourceReady(GlideDrawable resource, GlideAnimation<? super GlideDrawable> glideAnimation) {
+                    public void onResourceReady(@NonNull Drawable resource, @Nullable Transition<? super Drawable> transition) {
                         superTextView3.setRightTvDrawableRight(resource);
                     }
                 });
 
         Glide.with(this)
                 .load(url4)
-                .into(new SimpleTarget<GlideDrawable>() {
+                .into(new SimpleTarget<Drawable>() {
                     @Override
-                    public void onResourceReady(GlideDrawable resource, GlideAnimation<? super GlideDrawable> glideAnimation) {
+                    public void onResourceReady(Drawable resource, Transition<? super Drawable> glideAnimation) {
                         alipayStv.setLeftTvDrawableRight(resource);
                     }
                 });
